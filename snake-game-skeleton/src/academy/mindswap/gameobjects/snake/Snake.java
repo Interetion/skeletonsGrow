@@ -40,6 +40,9 @@ public class Snake implements Iterable {
 
     public void increaseSize() {
 
+    snakePosition.addLast(new Position(tail.getX(), tail.getY()));
+
+
     }
 
     public void move(Direction direction) {

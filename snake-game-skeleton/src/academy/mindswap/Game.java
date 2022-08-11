@@ -69,6 +69,7 @@ public class Game {
     private void checkCollisions() {
        if( snake.getHead().getX()== this.fruit.getPosition().getX() &&snake.getHead().getY()== this.fruit.getPosition().getY()){
           generateFruit();
+          snake.increaseSize();
            System.out.println("apanhou a fruta");
        }
 
